@@ -1,0 +1,255 @@
+*{padding : 0;
+  margin : 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width : 100%;
+    background-color: black;
+    
+}
+nav{
+  display : flex;
+  align-items: right;
+  justify-content: space-between;
+  padding-top:45px ;
+  padding-left:8% ;
+  padding-right: 8%;
+}
+.Logo{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span{
+  color: #f9004d;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a :hover{
+  color :#f9004d;
+  transition: .4s;
+}
+
+.content {
+  position: absolute ;
+  top:50%;
+  left:8%;
+  transform:translateY(-50%) ;
+}
+h2{
+  color: white;
+  margin : 20px 0px 20px;
+  font-size: 75px;
+}
+h3{
+  color: white;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+h4{
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.about{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #191919;
+}
+.about img{
+  height: auto;
+  width: 430px;
+  float: left;
+}
+.about-text
+{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2{
+  color: white;
+  font-size: 70px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+}
+.about-text p{
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+button{
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 3px;
+  border-radius: 30px;
+  transition: .4s;
+  width: 110px;
+}
+.skills{
+  width: 100%;
+  height: 400px;
+  font-family: "poppins", sans-serif;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: column;
+  text-transform: capitalize;
+}
+.skills .title h2 {
+ font-size: 80px;
+ line-height: 40px;
+ text-align: center;
+ margin-bottom: 60px;
+ font-family:"poppins", sans-serif ;
+}
+
+.skills .title h4{
+  text-align: center;
+  justify-content: column;
+}
+.bars{
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: left;
+  display: grid;
+}
+
+.column-right{
+  width: 600px;
+  background: #191919;
+  box-shadow: 5px 5px 10px rgba(0,0,0,02) ;
+}
+ .skills .progress-line{
+   position: relative;
+   height: 10px;
+   width: 80%;
+   background-color : black;
+   border-radius: 10px;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                     0px 1px rgba(225,225,225,0.8)
+ }
+.progress-line span{
+  height: 100%;
+  width: 80%;
+  background-color: #f9004d;
+  position: absolute;
+}
+
+.progress-line.html span{
+  width: 85%;
+}
+.progress-line.css span{
+ width : 70%;
+}
+.progress-line.JavaScript span{
+  width: 75%;
+}
+.progress-line.PHP span{
+  width: 55%;
+}
+.progress-line.python span{
+  width: 80%;
+}
+.skills .progress-line span::before{
+  position: absolute;
+  content: "";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+
+.skills .progress-line span::after{
+  position: absolute;
+  content: "80%";
+  right: 0;
+  top: -28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background:#000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.skills .progress-line.html span::after{
+  content: "85%";
+}
+.skills .progress-line.css span::after{
+  content: "70%";
+}
+.skills .progress-line.JavaScript span::after{
+  content: "75%";
+}
+.skills .progress-line.PHP span::after{
+  content: "55%";
+}
+.skills .progress-line.python span::after{
+  content: "80%";
+}
+
+/* contact me */
+.contact-me{
+  width: 100%;
+  height: 350px;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me p{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact-me .button-two{
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 3px;
+  border-radius: 30px;
+  transition: .4s;
+  width: 110px;
+}
